@@ -32,9 +32,17 @@ export function SiteFooter() {
           <span className="text-base-content/70">Paschim Vihar, Delhi 110063</span>
         </nav>
       </div>
-      <p className="mx-auto mt-7 w-[min(1180px,calc(100%-40px))] border-t border-white/10 pt-4 text-sm text-base-content/70">
-        © 2026 BK Sports &amp; Fitness. Paschim Vihar, Delhi.
-      </p>
+      <div className="mx-auto mt-7 flex w-[min(1180px,calc(100%-40px))] flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-4">
+        <p className="text-sm text-base-content/70">© 2026 BK Sports &amp; Fitness. Paschim Vihar, Delhi.</p>
+        <a
+          href="https://faizaan-alam-portfolio.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="badge badge-outline h-auto border-white/20 px-3 py-2 text-[0.68rem] font-semibold tracking-[0.16em] text-base-content/80 uppercase transition hover:border-primary hover:text-primary"
+        >
+          Made by Faizaan Alam
+        </a>
+      </div>
     </footer>
   );
 }
