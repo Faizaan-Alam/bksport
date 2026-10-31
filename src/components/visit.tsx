@@ -6,7 +6,7 @@ export function Visit() {
     <section id="visit" className="scroll-mt-24 py-20 lg:py-28">
       <div className="mx-auto w-[min(1180px,calc(100%-40px))]">
         <Reveal className="mb-9 max-w-3xl">
-          <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary uppercase">05 — Find the desk</p>
+          <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary uppercase">05 · Find the desk</p>
           <h2 className="font-display text-[clamp(2.8rem,6vw,5rem)] leading-[0.9] font-extrabold uppercase">Visit us</h2>
           <p className="mt-3.5 text-base-content/70">
             Paschim Vihar, Delhi. Call, WhatsApp, or walk in beside Laxmi Narayan Mandir.
@@ -41,7 +41,7 @@ export function Visit() {
                   </div>
                   <div className="py-3">
                     <p className="text-xs tracking-[0.14em] text-secondary uppercase">Hours</p>
-                    <p>Opens at 11:00 AM. Call or WhatsApp before you ride over — match days shift the desk.</p>
+                    <p>Opens at 11:00 AM. Call or WhatsApp before you ride over. Match days shift the desk.</p>
                   </div>
                   <div className="py-3">
                     <p className="text-xs tracking-[0.14em] text-secondary uppercase">Instagram</p>

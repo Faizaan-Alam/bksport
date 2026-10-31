@@ -1,3 +1,9 @@
+export const SITE_URL = "https://bksport.vercel.app";
+export const SITE_NAME = "BK Sports & Fitness";
+export const SITE_TITLE = "BK Sports & Fitness | Sports Shop in Paschim Vihar";
+export const SITE_DESCRIPTION =
+  "Paschim Vihar sports shop since 1999. Cricket, football, badminton, gym gear, bat knocking, racket repair, and delivery across India. WhatsApp +91 75036 00586.";
+
 export const PHONE_TEL = "+917503600586";
 export const PHONE_DISPLAY = "+91 75036 00586";
 export const INSTAGRAM = "https://www.instagram.com/b.ksportsfitness/";
@@ -27,11 +33,11 @@ export const filters: { id: Filter; label: string }[] = [
 ];
 
 export const filterNotes: Record<Filter, string> = {
-  all: "Six pieces players ask for by name. The rack behind them is deeper — sizes and today’s price on WhatsApp.",
+  all: "Six pieces players ask for by name. The rack behind them is deeper. Sizes and today's price are on WhatsApp.",
   cricket:
     "Bats and keeping gloves. Knocking and oiling happen in the shop before a new bat goes out.",
   football:
-    "Footballs, boots, and training kit are on the floor. The kit bag is a start — message for the size you need.",
+    "Footballs, boots, and training kit are on the floor. The kit bag is a start. Message for the size you need.",
   badminton:
     "Rackets, court shoes, and kit bags. Restringing and repair are done at the same desk.",
   gym: "Home-gym pieces you can pick up or have shipped. Ask for the weights in stock today.",
@@ -70,7 +76,7 @@ export const categories: {
     id: "badminton",
     index: "03",
     title: "Badminton",
-    text: "Rackets, shoes, and bags from Li-Ning, Yonex, and others — plus repair on the same desk.",
+    text: "Rackets, shoes, and bags from Li-Ning, Yonex, and others, plus repair on the same desk.",
     image: "/images/cat-badminton.jpg",
     alt: "Badminton racket and shuttlecock on a dark surface",
     area: "area-badminton",

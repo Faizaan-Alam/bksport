@@ -26,7 +26,7 @@ export function Shop() {
       <section id="categories" className="scroll-mt-24 py-20 lg:py-28">
         <div className="mx-auto w-[min(1180px,calc(100%-40px))]">
           <Reveal className="mb-9 max-w-3xl">
-            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary uppercase">01 — The floor</p>
+            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary uppercase">01 · The floor</p>
             <h2 className="font-display text-[clamp(2.8rem,6vw,5rem)] leading-[0.9] font-extrabold uppercase">Shop by sport</h2>
             <p className="mt-3.5 text-base-content/70">
               Five desks, one counter in Paschim Vihar. Pick a game and the floor will meet you there.
@@ -69,7 +69,7 @@ export function Shop() {
       <section id="gear" className="scroll-mt-24 bg-gradient-to-b from-white/[0.02] to-transparent py-20 lg:py-28">
         <div className="mx-auto w-[min(1180px,calc(100%-40px))]">
           <Reveal className="mb-8 max-w-3xl">
-            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary uppercase">02 — Highlights</p>
+            <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary uppercase">02 · Highlights</p>
             <h2 className="font-display text-[clamp(2.8rem,6vw,5rem)] leading-[0.9] font-extrabold uppercase">Gear the lane asks for</h2>
             <p className="mt-3.5 text-base-content/70">{filterNotes[filter]}</p>
           </Reveal>

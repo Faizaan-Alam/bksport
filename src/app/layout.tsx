@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Big_Shoulders, Outfit } from "next/font/google";
 import { Shell } from "@/components/shell";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TITLE, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -16,10 +17,57 @@ const display = Big_Shoulders({
 });
 
 export const metadata: Metadata = {
-  title: "BK Sports & Fitness | Paschim Vihar, Delhi",
-  description:
-    "BK Sports & Fitness — 27 years in Paschim Vihar, Delhi. Cricket, football, badminton, gym gear, bat knocking, racket repair, and delivery across India. Call or WhatsApp +91 7503600586.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_TITLE,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  keywords: [
+    "BK Sports & Fitness",
+    "sports shop Paschim Vihar",
+    "cricket shop Delhi",
+    "badminton racket repair Paschim Vihar",
+    "gym equipment Paschim Vihar",
+    "bat knocking Delhi",
+  ],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "/",
+    siteName: SITE_NAME,
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: "/images/hero.jpg",
+        width: 1280,
+        height: 720,
+        alt: "Cricket bat, football, badminton racket, shuttlecock and dumbbells",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/images/hero.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   icons: { icon: "/favicon.svg" },
+  category: "sports",
 };
 
 export const viewport: Viewport = {

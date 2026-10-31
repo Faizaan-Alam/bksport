@@ -20,12 +20,12 @@ export function About() {
           </p>
         </Reveal>
         <Reveal>
-          <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary uppercase">04 — The shop</p>
+          <p className="mb-3 text-xs font-semibold tracking-[0.2em] text-primary uppercase">04 · The shop</p>
           <h2 className="font-display text-[clamp(2.8rem,6vw,5rem)] leading-[0.9] font-extrabold uppercase">
             A local counter with a long memory
           </h2>
           <p className="mt-4 text-[#d5d8cc]">
-            B.K. Sports &amp; Fitness has stood in Paschim Vihar for 27 years. It began as a Jwala Heri counter players already knew by name — bats, rackets, shoes, and someone who would tell you what was actually worth buying.
+            B.K. Sports &amp; Fitness has stood in Paschim Vihar for 27 years. It began as a Jwala Heri counter players already knew by name: bats, rackets, shoes, and someone who would tell you what was actually worth buying.
           </p>
           <p className="mt-4 text-[#d5d8cc]">
             The floor is larger now, in Jwalaheri beside Laxmi Narayan Mandir. The work is the same. Gear is chosen at the counter, bats are knocked and oiled, rackets are repaired, and orders leave for the rest of India and overseas.

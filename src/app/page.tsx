@@ -4,7 +4,7 @@ import { Services } from "@/components/services";
 import { Shop } from "@/components/shop";
 import { SiteFooter } from "@/components/site-footer";
 import { Visit } from "@/components/visit";
-import { INSTAGRAM, PHONE_TEL } from "@/lib/site";
+import { INSTAGRAM, MAPS_URL, PHONE_TEL, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 const ticker =
   "Cricket bats · Knocking & oiling · Badminton rackets · Li-Ning · Yonex · Football · Basketball · Gym gear · Kit bags · Sports shoes · Pan-India delivery · Worldwide shipping · ";
@@ -13,10 +13,14 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "SportingGoodsStore",
-    name: "BK Sports & Fitness",
+    "@id": `${SITE_URL}/#store`,
+    name: SITE_NAME,
     alternateName: "B.K. Sports & Fitness",
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    image: `${SITE_URL}/images/hero.jpg`,
     telephone: PHONE_TEL,
-    url: INSTAGRAM,
+    hasMap: MAPS_URL,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Plot No. 1, Residential Scheme, Paschim Vihar Main Road, Jwalaheri Village",
@@ -24,6 +28,17 @@ export default function Home() {
       addressRegion: "Delhi",
       postalCode: "110063",
       addressCountry: "IN",
+    },
+    areaServed: [
+      { "@type": "Place", name: "Paschim Vihar, Delhi" },
+      { "@type": "Country", name: "India" },
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: PHONE_TEL,
+      contactType: "customer service",
+      areaServed: "IN",
+      availableLanguage: ["English", "Hindi"],
     },
     sameAs: [INSTAGRAM],
   };
